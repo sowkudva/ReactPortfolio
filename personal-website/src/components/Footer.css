@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: rgb(19, 19, 19, 0.8);
+}
+
+.footer-container-top {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.icon-text {
+    display: flex;
+    margin-bottom: 0.9rem;
+}
+
+@media screen and (max-width: 640px) {
+    .footer-container-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}

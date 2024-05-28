@@ -1,0 +1,49 @@
+.hero-img {
+  width: 100%;
+  height: 85vh;
+  background: rgb(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.hero-img::before {
+  content: "";
+  background-image: url("../assets/my_code2.png");
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img h1 {
+  font-size: 2.4rem;
+}
+
+.hero-img p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-img h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-img p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
